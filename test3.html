@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .field-container {
+            display: flex;
+            align-items: center;
+            margin: 10px;
+        }
+        .field-container label {
+            margin-right: 10px;
+        }
+        .field-container .value-box {
+            padding: 10px;
+            background-color: #e0f7fa;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            font-size: 16px;
+            min-width: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="field-container">
+            <label for="yearly-maintenance">Yearly Maintenance:</label>
+            <div class="value-box" id="yearly-maintenance">₹ 10000</div>
+        </div>
+        <div class="field-container">
+            <label for="already-paid">Already Paid:</label>
+            <div class="value-box" id="already-paid">₹ 1500</div>
+        </div>
+        <div class="field-container">
+            <label for="amount-received">Amount Received:</label>
+            <div class="value-box" id="amount-received">₹ 500</div>
+        </div>
+        <div class="field-container">
+            <label for="balance-to-be-paid">Balance to be paid:</label>
+            <div class="value-box" id="balance-to-be-paid">₹ 8000</div>
+        </div>
+    </div>
+</body>
+</html>

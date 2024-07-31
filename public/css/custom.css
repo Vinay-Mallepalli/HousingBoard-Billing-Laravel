@@ -1,0 +1,61 @@
+body {
+    background-color: #f8f9fa; /* Light gray background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0; /* Remove default margin */
+}
+
+.card {
+    background: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(90, 120, 255);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px; /* Set maximum width for the card */
+    margin: auto; /* Center the card horizontally */
+}
+
+.card-header {
+    font-size: 24px; /* Larger font size for the card header */
+    font-weight: bold; /* Bold font weight for the card header */
+    color: #ffffff; /* White text color for the card header */
+    background-color: #007bff; /* Blue background color */
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.col-form-label {
+    padding-top: 6px; /* Align labels with input fields */
+    white-space: nowrap; /* Prevent line break in label text */
+}
+
+.form-check-label {
+    padding-left: 0; /* Adjust checkbox label alignment */
+}
+
+.btn-primary {
+    font-size: 18px; /* Increase font size for the login button */
+    border-radius: 5px;
+    width: 80%; /* Make the button full width */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.invalid-feedback {
+    display: block; /* Ensure error messages are displayed correctly */
+}
+
+.invalid-feedback strong {
+    font-weight: bold; /* Bold error message text */
+}
+
+.form-check-input {
+    margin-top: 0.3rem;
+    margin-left: 0;
+}

@@ -1,0 +1,78 @@
+/* Update the pagination styles */
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+/* Initial state */
+.sidebar-offcanvas {
+    width: 257px;
+    transition: width 0.3s;
+  }
+  
+  .main-content {
+    margin-left: 257px; /* Adjust this value to match the sidebar width */
+    transition: margin-left 0.3s;
+  }
+  
+  /* Collapsed state */
+  .sidebar-offcanvas.active {
+    width: 60px; /* Adjust as needed */
+  }
+  
+  .main-content.expanded {
+    margin-left: 60px; /* Adjust this value to match the collapsed sidebar width */
+  }
+  
+
+.page-link {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.page-link:hover {
+    background-color: #f0f0f0;
+}
+
+.page-item.active .page-link {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.page-item.disabled .page-link {
+    color: #ccc;
+    pointer-events: none;
+}
+
+/* Adjust the font size and padding of the page links */
+.pagination .page-item .page-link {
+    font-size: 14px; /* Adjust the font size as needed */
+    padding: 3px 6px; /* Adjust the padding as needed */
+}
+
+/* Customize the arrow marks */
+.pagination .page-item:first-child .page-link::before {
+    content: '«'; /* Unicode character for left arrow */
+    margin-right: 5px;
+}
+
+.pagination .page-item:last-child .page-link::after {
+    content: '»'; /* Unicode character for right arrow */
+    margin-left: 5px;
+}
+
+
+@media screen and (max-width: 650px){
+      /* Collapsed state */
+  .sidebar-offcanvas.active {
+    width: 250px; /* Adjust as needed */
+  }
+}
